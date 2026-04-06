@@ -241,6 +241,7 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    overflow: visible;
 }
 
 .contact-card.flipped {
@@ -355,7 +356,8 @@ body {
     font-size: 24px;
     transition: all 0.3s;
     box-shadow: 0 0 10px var(--gold-bright);
-    z-index: 1001;
+    z-index: 9999;
+    transform: translateZ(20px);
 }
 
 .btn-close:hover {
