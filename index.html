@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Seiya - Gold Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="Home">
+        <nav class="Menu-div">
+            <ul id="Menu-h">
+                <li><a href="#">Início</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Explorar ▼</button>
+                    <div class="dropdown-content">
+                        <!-- <a href="#">Bronze</a>
+                        <a href="#">Prata</a>
+                        <a href="#">Ouro</a> -->
+                        <a href="https://www.saintseiya-anime.com/ja/" class="modal_btn">Site Oficial</a>
+                        <a href="sagas.html">Sagas</a>
+                        <a href="https://radiojhero.com/">Músicas</a>
+                        <a href="https://gameworld.com.br/jogos-dos-cavaleiros-do-zodiaco/">Jogos</a>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="openContactModal()">Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="modal_overlay" class="modal-overlay">
+        <div id="modal_ep" class="gold-glow-strong">
+            <button onclick="fechaModal()" id="closeButton">
+                <span class="gold-x">&times;</span>
+            </button>
+            <div id="modal_ep_content">
+                <video id="videoPlayer" width="100%" controls playsinline>
+                    <source src="/Imagens/Saint seiya  - hades.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                    <div class="modal-footer">
+                     <!-- <button onclick="recomecarVideo()" class="modal_btn">Recomeçar</button> -->
+                    <a href="https://www.saintseiya-anime.com/ja/" class="modal_btn">Site Oficial</a>
+                    <a href="https://radiojhero.com/" class="modal_btn">Músicas</a>
+                    <a href="https://gameworld.com.br/jogos-dos-cavaleiros-do-zodiaco/" class="modal_btn">Jogos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Contato -->
+    <div id="contact_modal" class="contact-modal">
+        <div id="contact_card" class="contact-card">
+            <button onclick="closeContactModal()" class="btn-close">&times;</button>
+            <!-- Frente do card -->
+            <div class="contact-front">
+                <img src="Imagens/Contato/Neo.png" alt="Foto de Contato" class="contact-photo-front">
+                <h3>Neandro Avelino</h3>
+                <p>neo@example.com</p>
+                <p style="color: gold;font-weight: 500;"><a style="text-decoration: none; color: gold;" href="https://www.linkedin.com/in/neandro-avelino/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                <button onclick="toggleAura()" class="btn-flip">✨</button>
+            </div>
+            
+            <!-- Verso do card -->
+            <div class="contact-back">
+                <img src="Imagens/Contato/2.png" alt="Foto Verso" class="contact-photo-back">
+                <h3>Neo de Virgem</h3>
+                <p>Cavaleiro de Ouro de Virgem</p>
+                <p>Protejo Athena e a Casa de Virgem nas horas vagas</p>
+                <button onclick="toggleAura()" class="btn-flip-back">↺</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="Hero-Banner gold-glow-soft">
+        <div class="carousel">
+            <img src="Imagens/imagens-banner/1.png" alt="Banner 1" class="carousel-image active">
+            <img src="Imagens/imagens-banner/2.png" alt="Banner 2" class="carousel-image">
+            <img src="Imagens/imagens-banner/3.png" alt="Banner 3" class="carousel-image">
+            <img src="Imagens/imagens-banner/4.png" alt="Banner 4" class="carousel-image">
+            <img src="Imagens/imagens-banner/5.png" alt="Banner 5" class="carousel-image">
+            <button class="carousel-btn prev" onclick="previousImage()">&#10094;</button>
+            <button class="carousel-btn next" onclick="nextImage()">&#10095;</button>
+        </div>
+        <div class="banner-overlay"></div>
+    </section>
+
+    <!-- Cursor Animado ao Clicar -->
+    <div id="cursor-animation" class="cursor-click"></div>
+
+    <main class="Grid-Container">
+        <div class="Container-anime gold-glow-soft">
+            <div class="image-box">
+                <img style="position:center;" src="Imagens/imagens-usadas/seyia556t_2.png" 
+                     data-static="Imagens/imagens-usadas/seyia556t_2.png" 
+                     data-gif="Imagens/imagens-usadas/seiya-6.gif" 
+                     class="gif-hover" alt="Seiya">
+            </div>
+            <div class="card-text">
+                <h3>Pégaso</h3>
+                <p>O cavaleiro de bronze da constelação de Pégaso e o protagonista obstinado da série. Conhecido por sua determinação inabalável, Seiya nunca desiste, não importa quão poderoso seja o inimigo. Seu golpe principal, o Meteoro de Pégaso, é capaz de disparar centenas de socos por segundo à velocidade do som.</p>
+            </div>
+        </div>
+
+        <div class="Container-anime gold-glow-soft">
+            <div class="image-box">
+                <img src="Imagens/imagens-usadas/shiryu2.png" 
+                     data-static="Imagens/imagens-usadas/shiryu2.png" 
+                     data-gif="Imagens/imagens-usadas/Shiryu.gif" 
+                     class="gif-hover" alt="Shiryu">
+            </div>
+            <div class="card-text">
+                <h3>Dragão</h3>
+                <p>Treinado nos Cinco Picos de Rozan pelo Mestre Ancião, Shiryu é o mais sereno e sábio do grupo. Ele possui o escudo mais resistente entre as armaduras de bronze e é famoso por sua disposição ao sacrifício em nome da amizade. Sua técnica Cólera do Dragão manifesta uma força devastadora que reverte o fluxo de cachoeiras.</p>
+            </div>
+        </div>
+
+        <div  class="Container-anime gold-glow-soft">
+            <div  class="image-box">
+                <img src="Imagens/imagens-usadas/Hyoga33.png" 
+                     data-static="Imagens/imagens-usadas/Hyoga33.png" 
+                     data-gif="Imagens/imagens-usadas/Hyoga.gif" 
+                     class="gif-hover" alt="Hyoga">
+            </div>
+            <div class="card-text">
+                <h3>Cisne</h3>
+                <p>Criado nas geladas terras da Sibéria, Hyoga domina as técnicas de congelamento aprendidas com o seu Mestre o Cavaleiro Camus de Aquário. Ele busca alcançar o "Zero Absoluto", a temperatura onde toda a matéria para de se mover. Seu golpe Pó de Diamante envolve os oponentes em uma nevasca mortal de cristais de gelo.</p>
+            </div>
+        </div>
+
+        <div class="Container-anime gold-glow-soft">
+            <div class="image-box">
+                <img src="Imagens/imagens-usadas/shun.png" 
+                     data-static="Imagens/imagens-usadas/shun.png" 
+                     data-gif="Imagens/imagens-usadas/shun45.gif" 
+                     class="gif-hover" alt="Shun">
+            </div>
+            <div class="card-text">
+                <h3>Andrômeda</h3>
+                <p>Embora possua um dos cosmos mais vastos entre os cavaleiros, Shun detesta a violência e prefere resolver conflitos pacificamente. Ele utiliza as Correntes de Andrômeda tanto para uma defesa impenetrável quanto para um ataque preciso. Quando levado ao limite, seu golpe Tempestade Nebulosa revela um poder destrutivo imensurável.</p>
+            </div>
+        </div>
+
+        <div class="Container-anime gold-glow-soft">
+            <div class="image-box">
+                <img src="Imagens/imagens-usadas/ikki552.png" 
+                     data-static="Imagens/imagens-usadas/ikki552.PNG" 
+                     data-gif="Imagens/imagens-usadas/Ikki.gif" 
+                     class="gif-hover" alt="Ikki">
+            </div>
+            <div class="card-text">
+                <h3>Fênix</h3>
+                <p>O irmão mais velho de Shun e o cavaleiro mais solitário e poderoso do grupo. Tal como a ave mitológica, Ikki sempre ressurge das cinzas, tornando-se mais forte a cada derrota. Com o Golpe Fantasma de Fênix, ele destrói a mente de seus inimigos, enquanto o seu Ave Fênix incinera tudo o que estiver em seu caminho.</p>
+            </div>
+        </div>
+
+        <div class="Container-anime gold-glow-soft">
+            <div class="image-box">
+                <img src="Imagens/saori-kido.jpg" 
+                     data-static="Imagens/saori-kido.jpg" 
+                     data-gif="Imagens/Athena.gif" 
+                     class="gif-hover" alt="Saori">
+            </div>
+            <div class="card-text">
+                <h3>Athena</h3>
+                <p>A reencarnação da deusa da sabedoria e da guerra justa na era moderna. Inicialmente uma jovem herdeira, Saori desperta para sua divindade e assume a responsabilidade de proteger a Terra das garras de deuses malignos. Ela é a fonte de inspiração e a luz que guia seus cavaleiros na luta pela paz e pela justiça.</p>
+            </div>
+        </div>
+    </main>
+
+    <p class="assinatura">Criado por Neo</p>
+
+    <script src="main.js"></script>
+    <script>
+        document.querySelectorAll('a[href]').forEach(function(a){
+            if(!a.hasAttribute('target')){
+                a.setAttribute('target','_blank');
+                if(!a.hasAttribute('rel')) a.setAttribute('rel','noopener noreferrer');
+            }
+        });
+    </script>
+</body>
+</html>

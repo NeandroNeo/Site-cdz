@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagas - Saint Seiya - Gold Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="Home">
+        <nav class="Menu-div">
+            <ul id="Menu-h">
+                <li><a href="index.html">Início</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Explorar ▼</button>
+                    <div class="dropdown-content">
+                        <!-- <a href="#">Bronze</a>
+                        <a href="#">Prata</a>
+                        <a href="#">Ouro</a> -->
+                        <a href="https://www.saintseiya-anime.com/ja/" class="modal_btn">Site Oficial</a>
+                        <a href="sagas.html">Sagas</a>
+                        <a href="https://radiojhero.com/">Músicas</a>
+                        <a href="https://gameworld.com.br/jogos-dos-cavaleiros-do-zodiaco/">Jogos</a>
+                    </div>
+                </li>
+                <li style="cursor: pointer;" onclick="openContactModal()">Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal de Contato -->
+    <div id="contact_modal" class="contact-modal">
+        <div id="contact_card" class="contact-card">
+            <button onclick="closeContactModal()" class="btn-close">&times;</button>
+            <!-- Frente do card -->
+            <div class="contact-front">
+                <img src="Imagens/Contato/Neo.png" alt="Foto de Contato" class="contact-photo-front">
+                <h3>Neandro Avelino</h3>
+                <p>neo@example.com</p>
+                <p style="color: gold;font-weight: 500;"><a style="text-decoration: none; color: gold;" href="https://www.linkedin.com/in/neandro-avelino/" target="_blank" rel="noopener noreferrer">Linkedin</a></p>
+                <button onclick="toggleAura()" class="btn-flip">✨</button>
+            </div>
+            
+            <!-- Verso do card -->
+            <div class="contact-back">
+                <img src="Imagens/Contato/2.png" alt="Foto Verso" class="contact-photo-back">
+                <h3>Neo de Virgem</h3>
+                <p>Cavaleiro de Ouro de Virgem</p>
+                <p>Protejo Athena e a Casa de Virgem nas horas vagas</p>
+                <button onclick="toggleAura()" class="btn-flip-back">↺</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="Hero-Banner gold-glow-soft">
+        <img src="Imagens/cdz.png" alt="Saint Seiya Banner">
+        <div class="banner-overlay"></div>
+    </section>
+
+    <!-- Cursor Animado ao Clicar -->
+    <div id="cursor-animation" class="cursor-click"></div>
+
+    <main class="sagas-container">
+        <h2 style="color: var(--gold-bright); text-align: center; text-transform: uppercase;">Sagas de Saint Seiya</h2>
+
+        <!-- Saga do Santuário -->
+        <section class="saga-section">
+            <h3 class="saga-title">Saga do Santuário (Episódios 1–73)</h3>
+
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.blogger.com/video.g?token=AD6v5dzf0KAza1L4MZ5oSFStR85DMPoKG2BnX_HkBlXhV0dqBl36u9CQnJLaL52Z5nZhzI40Wpr8gMfZthdwEX_UM5FUeK-AYynKnO41EX4olr_eeLQxTL5Mt0O-Jl3uxpp6OSFF8EZQ">As
+                    Lendas de uma Nova Era</a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.blogger.com/video.g?token=AD6v5dxCUDX0-sVfRI1mMW9jhyQEyZdRvFcMfAQbmoBcJSOd3Qgz6e7Ctd-jAsBcwPTGeCBfo5SGJwFczBG4T-dd3iVm5wRqBtXlPMYX5N_tllI0X_1jkKMd7l0-d83KQEDpitif9so">Quando
+                    Seiya Veste a Armadura de Pégaso</a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.blogger.com/video.g?token=AD6v5dyTt6NXRRQoFbrmTKwaf5UxQY3Mio15z0WsJ9_HbF8XKQH-ajjp3eCw4dl_C7pOXCAj0yXweiFV3wV9ml7J5ZsBKZzqJw-TzPGhXriKQe7mrxR9QJoiAcxr26r9WdZ7dJFFbTo">O
+                    Cisne, o Guerreiro do Gelo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.blogger.com/video.g?token=AD6v5dzhFGfzDxvgtG29bF84YB5oWR0BGF728ksjCZM8PhevHberZz1g05Mes-r_c8zwf_Ny3rkc1g-LmALm4OSxUzKMKo7xfipeQIGjwNkwkAWHmTVJYt4ssDj4xWZ8tpR-Am8lGCGN">O
+                    invencível golpe do Dragão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.blogger.com/video.g?token=AD6v5dxC5tvruUk1yZzbD-vCTNx49-mCY3RG2n6yiu3uyLsk2W5OFcdq74t-fYYZI77-CnSKOJPuqD_9GZUYqtCSm3V0D86MlxwqFa9ZM6zv6slO14oT27KvyDvm_jvFGEDnvm00lWQ">A
+                    Ressurreição do Dragão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dyfTaiULpjMjTP646iNpXfbIpfccB5XduJ182gb1gbB4UySvqTp00SJK_2utYfwcfx8qWhZZhzOJnE4MviO1ed6fBg9cpXdXfQhdnRKaCVhC4rMBumiE9Lj4aMzjuxDxeVwBvq0">Fênix, o Cavaleiro que Voltou do Inferno</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dy6mDsu7pe35i-CNRBNhvyp37AHOzd31fvQIENdHMFd4VFo3nGqKiUxtAoDHMuCcMpE8MZcLRHJBK9I69tBdAq1f2IrutWIFAlXPnG-TWZhQCjL5Fe_jbjqtRIKWq_5UQINaiM">A Procura da Armadura de Ouro</a></li>
+                <!-- <li><a href="#">A Derrota dos Cavaleiros Negros</a></li> -->
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dyXXquwm6cIa2jTVnMlxb8WQ7yJDWVv3dNvBcAS_CYkQZir3LwVAQD39jwwrefGh34g9NRag-A0JwCICACtitcWF4mtunBqeoDT8lOvSc4zu00BPsT7vzrridYoO6TTJYVSxd_x">Os Cavaleiros do Apocalipse</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dz861oY7eEfxlIoiGkBCRmLSgLF7LUe2zPufg8Sgu3IrCFqItjIuNongZs3nLx9BcUi151Y9krsH1fhCOceq8in5DXCzbIWFRkKQ5EQ6Ml9SUBmZ-Ryu3vhX3xEHasrxZhcZQ">O Túmulo das Armaduras Sagradas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dxGQTMeVlXRzF6GMDOXL_L7unJJe8DPBlnQEQTkxZAK434n94y7TygUOCNDDFyw_-y7PiHOgRrIATaY-PlVaPsNI-yV86dyuifLe-AaJtJpOwne1O98Kbv1HXauyMBAd1bhOsY">Seiya Enfrenta o Pégusus Negro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dz_wt35byt6kdCI7_yqRlOwFEgICRes9ZUw0wbL1LVy2Vgqrwj6xUptPwEdzIHb9VuqSD2km06sK6hgZLPPh_T7XZGJDej63WcE1sUyjyWURHNrDUeTSRFB_z7Q9fqyu1RhU3Y">As Correntes da Amizade</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwL-RzPGP4Lb2T1cLayQQjlPwlv-zrTxsjwTlXl-Fny3hWj3EeDvjN5tY0bADOzqh_IytCW1O8jwDfZ8Ui48-4HLfrhI5SrzrVkp86kiOep4-lMAb2HXtAi5-1v6NKabrMVDx4O">Façanha Explosiva!</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dx0IvyqJionNVitzyfNMLSZOLoMVPoJv2LTtLbkVbNX6wA5dzPMfkNXpqTjYoIo2fbxdFXHzMLDNPDVevlRgH1Vcti1sAR6V5Id6CDnRjaHghi54TQwiGJYszapAZb-ZYtiE78">A Derrota do Espírito Diabólico</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwIZKoEuvtJE7QZUz-kvYbD1WBDLhdWj2Vgik17F59Gu24lUK8HU-fLvkjtWpr_rH8WVAYpKBcHu4ElF1TdIxEWzTLL-AaehpEAYnXgLMc0Wu6poubeau5WgE5uUJ9LA2PvudYR">O Segredo de Ikki</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dyjDZXXN_ZFeT6ssVB2VutA52AtQIVXPHQYlkiimpDQrjEQUjxzujZhnYJ6Z-mYL-X4G6_0qhIgGETc80ehIeC0bZRwxraLp6vzssD6w5pv_c5HwtBjQ34_1uCYBpJ6Q2No5g">O Ataque a Fundação</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dygrftwL3IXLLjVkd5sAALn8qr7szoIzUZ4TgxZT-p7XWQlp2Yva8ZtlxKzN2QbMjX7EZgOIDSxmL3DE1Bo5fDh3udBbNEVEx1GBYZjJv_AszOgVjGz1C58F68eoRfVEepgPL8S">Temos que salvar Saori</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwMO0uwW4sfphrLzBMBShc4wE9Z1vot5Kd0eKj0eI1E5UYV50FRhiJXhg33JRQhjsPCjk6ZaIiRfOdO01CNpJ6Op5Gs1kNaujpJqwRtkRYc_YF_x2692kwt1bxWjatUaCjHd12_">Os Cavaleiros Fantasmas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwS6DtaCLGcBEGrtjy3EKeVl_gCp8CBGbu029LTHVC7qItU65XUxoX48UMr9B51NEFKLA2eqGjqaBlFZ6EP4ZyZ9niMgR0UqfnXE_fpl5FG-uzJ-0YF88MZdCkDKPRiywlO1MNm">A Ilha Fantasma</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwGIKI1dT0dnUvE7x2HpgR8e-x215lSZecknfoF8oddmuubMCQyil92gSvpT_3odiY0KGaB6-jloX46VsDSz_ED8wKMf8cE3vYnguue8GxIMQq9xEKLdLsF2JWYXKgC2Zljzv4&origin=animescdzonline.blogspot.com">A Traição do Mestre Crystal</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dxx5epfk0-b6Gk_60g8JSulm_a655a06DqtIrbt602FkTqCl6TIsEJh5MTSQMBAiRHV3D4ws7hW705tX-JK422QSLmoQmh1ZsrrSpuVGU2Hy6LAj7XNlE3qAIWbqBTIayBaWAM&origin=animescdzonline.blogspot.com">A Pirâmide de Gelo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwqMCMcc3t6s0BvTjy5d5XYLq7kNezd9lA8iUxAfKOgLdDQMkYu9mndolbZPmjp8fe-HQ2C0nSSCTexI_o1CIgyLTD-O6L-CIDb7Md4FZ7dYr93dNu7MrB-T3FflShtpyKd7ig&origin=animescdzonline.blogspot.com">O Cavaleiro das Chamas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.blogger.com/video.g?token=AD6v5dwthNr0Cng4Rmx0CePpGOMw68ZA_6CgylbCwG-QVceIb0NpPPKIVUqLKwr-vie8Dh0ctYx6DLyZrV65ooSyo80TV_rfeaczPVAWikldPy5Ot_E7tXpw4JUaUK2ebKvDud1BdxU&origin=animescdzonline.blogspot.com">O Anjo da Morte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Voo de Pégaso</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Revelação</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Amigos ou Inimigos?</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Seiya Transforma-se em Pedra</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Shiryu</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sequestro de Saori</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Brilho do Cosmo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Fronteira entre a Vida e a Morte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Ilha da Rainha da Morte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Vingança de Dragão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Descanso de Shiryu</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Decisão de Seiya</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Ataque dos Cavaleiros de Ouro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Escolha de Aiolia</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Revelação de Atena</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Cosmo de Ouro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Viagem</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Batalha do Santuário</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Cosmo Supremo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Batalha da Casa de Touro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Gêmeos, o Labirinto de Luz e Sombra</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Enviados para uma Outra Dimensão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Corrente Nebulosa de Andrômeda</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Fim de Hyoga</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Dragão Retorna do Mundo dos Mortos</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Golpe de Cólera de Shiryu</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Reaparecimento do Dragão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Por que Leão Tentou Matar Seiya?</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Golpe Satânico de Ares</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Cassios</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Ikki, a Ave Fênix sem Asas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Atena ao Resgate</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Shaka, o Cavaleiro Mais Próximo de Deus</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Segredo de Shaka</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Ikki</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Ressurreição de Hyoga</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Renascimento de Hyoga</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Renda-se ou Morra!</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Hyoga, o Guerreiro de Gelo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Todas as Armaduras de Ouro Reunidas no Santuário</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Juramento dos Cavaleiros de Bronze</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Espada Sagrada de Shura</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Shiryu (O Último Dragão)</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Zero Absoluto</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Última Barreira: A Rosa Sangrenta</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Doce Perfume da Morte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Mestre do Santuário</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Verdadeiro Rosto de Ares</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Renascimento das Armaduras</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Vitória Final de Atena</a></li>
+            </ul>
+        </section>
+
+        <!-- Saga de Asgard -->
+        <section class="saga-section">
+            <h3 class="saga-title">Saga de Asgard (Episódios 74–99)</h3>
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Os Inimigos do Norte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Hilda, a Deusa Enfeitiçada pelo Anel de Nibelungo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Cosmo de Thor de Phecda</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Gigante Thor</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Fenrir, o Lobo do Norte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Destino de Fenrir</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Hagen de Merak</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Amor de Freya</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Voo de Cisne</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Harpa Misteriosa de Mime</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Morte de Mime</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Alberich de Megrez</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Espada de Fogo</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Ametista Maldita</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Segredo de Alberich</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Alberich</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Shido de Mizar</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Segredo de Shido</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Bado de Alcor</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Fraternidade dos Guerreiros Deuses</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Reencontro de Irmãos</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Siegfried, o Guerreiro Invencível</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sacrifício de Siegfried</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Chamado de Poseidon</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Aparição do Imperador dos Mares</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Renascimento de Poseidon</a></li>
+            </ul>
+        </section>
+
+        <!-- Saga de Poseidon -->
+        <section class="saga-section">
+            <h3 class="saga-title">Saga de Poseidon (Episódios 100–114)</h3>
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Santuário Submarino</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Pilar do Pacífico Norte</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Sopro de Escama</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Corrente de Andrômeda</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Nascimento de uma Deusa</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Lança de Ouro de Krishna</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Pilar do Antártico</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O General Marina Kassa</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Isaac, o General Marina de Kraken</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Triste Reencontro de Hyoga</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Renascimento da Armadura de Ouro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Pilar do Atlântico Sul</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Flauta de Sorento</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Despertar de Poseidon</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Triunfo de Atena</a></li>
+            </ul>
+        </section>
+
+        <!-- Capítulo do Santuário Hades -->
+        <section class="saga-section">
+            <h3 class="saga-title">Capítulo do Santuário Hades (13 Episódios)</h3>
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Início de uma Nova Guerra Santa</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Lamento dos Três</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Sombra dos que Hesitam</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Redenção do Imortal</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Dívidas do Passado</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Antigo Guerreiro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Grupo de Mantos Negros</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Momento da Hesitação</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Além do Orgulho</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Exclamação de Atena</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Abalar do Santuário</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Armadura de Atena</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Manhã da Determinação</a></li>
+            </ul>
+        </section>
+        <!-- Capítulo do Inferno -->
+        <section class="saga-section">
+            <h3 class="saga-title">Capítulo do Inferno (11 Episódios)</h3>
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer" href="#"> Cruzem o Rio Aqueronte!</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Julgamento Silencioso</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Orfeu, o Cavaleiro Lendário</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Orfeu, o Triste Réquiem</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Hades! Uma Surpreendente Possessão</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">A Violenta Luta! O Caminho para a Giudecca</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Castigo Divino! O Grande Eclipse</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Ikki! O Golpe da Tristeza</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Atena! Aposta a sua Vida</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Desespero! O Muro das Lamentações</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Reúnam-se! Armaduras de Ouro</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Adeus! Cavaleiros de Ouro</a></li>
+            </ul>
+        </section>
+        <!-- Capítulo do Elisios -->
+        <section class="saga-section">
+            <h3 class="saga-title">Capítulo do Elisios (6 Episódios)</h3>
+            <ul class="episodes-list">
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Caminho para os Elíseos</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Os Deuses da Morte e do Sono</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">Reforços Dourados</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">As Lendárias Armaduras Divinas</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="#">O Despertar do Mito</a></li>
+                <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.blogger.com/video.g?token=AD6v5dyM65vFNXH3aI42-4JAT9povt0KTgwr-rkG5H3uEW6xhojXAZkHsmQJ3yY6kGI3C3gnDR6mEQLDPOKKdDHgNVQgHUBaauyL1hm_ScnU-hwKaCaAaW1y_efHeiVSZ_Hpy8E4BJk">Rumo
+                        a um Mundo de Luz</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <p class="assinatura">Criado por Neo</p>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
